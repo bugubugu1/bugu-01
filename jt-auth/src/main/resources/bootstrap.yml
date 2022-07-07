@@ -1,0 +1,20 @@
+server:
+  port: 8099
+  servlet:
+    context-path: /auth
+spring:
+  application:
+    name: jt-auth
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848
+        file-extension: yml
+management:
+  endpoint:
+    health:
+      enabled: true
+  main:
+    allow-bean-definition-overriding: true
